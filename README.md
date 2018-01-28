@@ -10,8 +10,7 @@
 
 <p align="center"><em>The example above was created with Slate. Check it out at <a href="https://lord.github.io/slate">lord.github.io/slate</a>.</em></p>
 
-Features
-------------
+## Features
 
 * **Clean, intuitive design** — With Slate, the description of your API is on the left side of your documentation, and all the code examples are on the right side. Inspired by [Stripe's](https://stripe.com/docs/api) and [PayPal's](https://developer.paypal.com/webapps/developer/docs/api/) API docs. Slate is responsive, so it looks great on tablets, phones, and even in print.
 
@@ -31,21 +30,20 @@ Features
 
 Getting started with Slate is super easy! Simply fork this repository and follow the instructions below. Or, if you'd like to check out what Slate is capable of, take a look at the [sample docs](http://lord.github.io/slate).
 
-Getting Started with Slate
-------------------------------
+## Getting Started with Slate
 
 ### Prerequisites
 
 You're going to need:
 
- - **Linux or OS X** — Windows may work, but is unsupported.
- - **Ruby, version 2.3.1 or newer**
- - **Bundler** — If Ruby is already installed, but the `bundle` command doesn't work, just run `gem install bundler` in a terminal.
+* **Linux or OS X** — Windows may work, but is unsupported.
+* **Ruby, version 2.3.1 or newer**
+* **Bundler** — If Ruby is already installed, but the `bundle` command doesn't work, just run `gem install bundler` in a terminal.
 
 ### Getting Set Up
 
 1. Fork this repository on GitHub.
-2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/slate.git`
+2. Clone _your forked repository_ (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/slate.git`
 3. `cd slate`
 4. Initialize and start Slate. You can either do this locally, or with Vagrant:
 
@@ -68,8 +66,7 @@ If you'd prefer to use Docker, instructions are available [in the wiki](https://
 
 For those who don't have JavaScript runtime or are experiencing JavaScript runtime issues with ExecJS, it is recommended to add the [rubyracer gem](https://github.com/cowboyd/therubyracer) to your gemfile and run `bundle` again.
 
-Companies Using Slate
----------------------------------
+## Companies Using Slate
 
 * [NASA](https://api.nasa.gov)
 * [IBM](https://docs.cloudant.com/api.html)
@@ -88,29 +85,27 @@ Companies Using Slate
 
 You can view more in [the list on the wiki](https://github.com/lord/slate/wiki/Slate-in-the-Wild).
 
-Need Help? Found a bug?
---------------------
+## Need Help? Found a bug?
 
 [Submit an issue](https://github.com/lord/slate/issues) to the Slate GitHub if you need any help. And, of course, feel free to submit pull requests with bug fixes or changes.
 
-Contributors
---------------------
+## Contributors
 
 Slate was built by [Robert Lord](https://lord.io) while interning at [TripIt](https://www.tripit.com/).
 
 Thanks to the following people who have submitted major pull requests:
 
-- [@chrissrogers](https://github.com/chrissrogers)
-- [@bootstraponline](https://github.com/bootstraponline)
-- [@realityking](https://github.com/realityking)
-- [@cvkef](https://github.com/cvkef)
+* [@chrissrogers](https://github.com/chrissrogers)
+* [@bootstraponline](https://github.com/bootstraponline)
+* [@realityking](https://github.com/realityking)
+* [@cvkef](https://github.com/cvkef)
 
 Also, thanks to [Sauce Labs](http://saucelabs.com) for sponsoring the development of the responsive styles.
 
-Special Thanks
---------------------
-- [Middleman](https://github.com/middleman/middleman)
-- [jquery.tocify.js](https://github.com/gfranko/jquery.tocify.js)
-- [middleman-syntax](https://github.com/middleman/middleman-syntax)
-- [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+## Special Thanks
+
+* [Middleman](https://github.com/middleman/middleman)
+* [jquery.tocify.js](https://github.com/gfranko/jquery.tocify.js)
+* [middleman-syntax](https://github.com/middleman/middleman-syntax)
+* [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
