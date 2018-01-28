@@ -1,0 +1,1207 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <div class="logo-wrapper">
+        <img src="images/logo.svg" class="logo" alt="Logo" />
+      </div>
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">shell</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc" class="toc-list-h1">
+          <li>
+            <a href="#commerce-api-reference" class="toc-h1 toc-link" data-title="Commerce API Reference">Commerce API Reference</a>
+          </li>
+          <li>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+          </li>
+          <li>
+            <a href="#example-create-an-order" class="toc-h1 toc-link" data-title="Example - create an order">Example - create an order</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#step-1-create-a-basket" class="toc-h2 toc-link" data-title="Step 1: Create a basket">Step 1: Create a basket</a>
+                  </li>
+                  <li>
+                    <a href="#step-2-create-a-basket-item" class="toc-h2 toc-link" data-title="Step 2: Create a basket item">Step 2: Create a basket item</a>
+                  </li>
+                  <li>
+                    <a href="#step-3-create-an-order-from-the-basket" class="toc-h2 toc-link" data-title="Step 3: Create an order from the basket">Step 3: Create an order from the basket</a>
+                  </li>
+                  <li>
+                    <a href="#step-4-create-a-payment-for-the-order" class="toc-h2 toc-link" data-title="Step 4: Create a payment for the order">Step 4: Create a payment for the order</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#baskets" class="toc-h1 toc-link" data-title="Baskets">Baskets</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-basket" class="toc-h2 toc-link" data-title="Create a Basket">Create a Basket</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#basket-items" class="toc-h1 toc-link" data-title="Basket items">Basket items</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-basket-item" class="toc-h2 toc-link" data-title="Create a Basket Item">Create a Basket Item</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#orders" class="toc-h1 toc-link" data-title="Orders">Orders</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-an-order" class="toc-h2 toc-link" data-title="Create an Order">Create an Order</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#payments" class="toc-h1 toc-link" data-title="Payments">Payments</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-payment" class="toc-h2 toc-link" data-title="Create a Payment">Create a Payment</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#products" class="toc-h1 toc-link" data-title="Products">Products</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-products" class="toc-h2 toc-link" data-title="Get Products">Get Products</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-product" class="toc-h2 toc-link" data-title="Get a Specific Product">Get a Specific Product</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#skus" class="toc-h1 toc-link" data-title="SKUs">SKUs</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-skus" class="toc-h2 toc-link" data-title="Get SKUs">Get SKUs</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-sku" class="toc-h2 toc-link" data-title="Get a Specific SKU">Get a Specific SKU</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                  </li>
+              </ul>
+          </li>
+      </div>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='commerce-api-reference'>Commerce API Reference</h1>
+<p>Welcome to the Commerce API! You can use this API to retrieve products, SKUs, payment methods, etc, as well as create baskets, basket items, orders and payments.</p>
+
+<p>These docs contain code examples in cUrl - you can view these in the dark area to the right.</p>
+<h1 id='authentication'>Authentication</h1>
+<blockquote>
+<p>To authorize, use this code:</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
+curl <span class="s2">"api_endpoint_here"</span>
+  -H <span class="s2">"Authorization: Bearer api_key"</span>
+</code></pre>
+<blockquote>
+<p>Make sure to replace <code>api_key</code> with your API key.</p>
+</blockquote>
+
+<p>Goods uses API keys to allow access to the Commerce API. You can register a new API key for a shop by logging in to <a href="http://www.goods.co.uk">Goods Platform</a>, going to the shop, then <code>Settings</code> and then <code>Users</code>.</p>
+
+<p>Goods expects the API key to be included in all API requests to the server in a header that looks like the following:</p>
+
+<p><code>Authorization: Bearer api_key</code></p>
+
+<aside class="notice">
+You must replace <code>api_key</code> with your API key.
+</aside>
+<h1 id='example-create-an-order'>Example - create an order</h1>
+<blockquote>
+<p>Step 1: create a basket</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/baskets"</span>
+    -X <span class="s2">"POST"</span>
+    -H <span class="s1">'Authorization: Bearer api_key'</span>
+
+    -d <span class="s1">$'{"data": {}}'</span>
+</code></pre>
+<blockquote>
+<p>Step 2: create a basket item for SKU ID 1 and quantity 1</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/basket-items"</span>
+    -X <span class="s2">"POST"</span>
+    -H <span class="s1">'Authorization: Bearer api_key'</span>
+    -d <span class="s1">$'{
+  "data": {
+    "attributes": {
+      "quantity": 1
+    },
+    "relationships": {
+      "basket": {
+        "data": {
+          "id": "26c266ee-9936-431a-8d3f-f4b3bc8f978f",
+          "type": "baskets"
+        }
+      },
+      "sku": {
+        "data": {
+          "id": "1",
+          "type": "skus"
+        }
+      }
+    }
+  }
+}'</span>
+</code></pre>
+<blockquote>
+<p>Step 3: create an order from the basket with the customer&#39;s details</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/orders"</span>
+    -X <span class="s2">"POST"</span>
+    -H <span class="s1">'Authorization: Bearer api_key'</span>
+    -d <span class="s1">$'{
+  "data": {
+    "attributes": {
+      "phone-number": "0123456789",
+      "mobile-number": "",
+      "billing-address1": "1 Infinite Loop",
+      "billing-address2": "",
+      "billing-city": "London",
+      "billing-country": "GB",
+      "email-address": "john@smith.com",
+      "billing-region": "",
+      "name": "John Smith",
+      "billing-postcode": "W1 1AA"
+    },
+    "type": "orders",
+    "relationships": {
+      "basket": {
+        "data": {
+          "type": "baskets",
+          "id": "26c266ee-9936-431a-8d3f-f4b3bc8f978f"
+        }
+      }
+    }
+  }
+}
+</span></code></pre>
+<blockquote>
+<p>Step 4: create a payment for the order using shop payment method 1</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/payments"</span>
+    -X <span class="s2">"POST"</span>
+    -H <span class="s1">'Authorization: Bearer api_key'</span>
+
+    -d <span class="s1">$'{
+  "data": {
+    "attributes": {
+      "amount": "10000",
+      "capture": "true"
+    },
+    "relationships": {
+      "order": {
+        "data": {
+          "type": "orders",
+          "id": "1234567891234"
+        }
+      },
+      "shop-payment-method": {
+        "data": {
+          "type": "shop-payment-methods",
+          "id": "1"
+        }
+      }
+    }
+  }
+}'</span>
+</code></pre>
+<p>This is an example of how, from start to finish, a fully paid order can be created.</p>
+<h3 id='step-1-create-a-basket'>Step 1: Create a basket</h3>
+<p>First up a basket must be created. Baskets can have items added and removed, be modified, etc.</p>
+<h3 id='step-2-create-a-basket-item'>Step 2: Create a basket item</h3>
+<p>First up a basket must be created. Baskets can have items added and removed, be modified, etc.</p>
+<h3 id='step-3-create-an-order-from-the-basket'>Step 3: Create an order from the basket</h3>
+<p>First up a basket must be created. Baskets can have items added and removed, be modified, etc.</p>
+<h3 id='step-4-create-a-payment-for-the-order'>Step 4: Create a payment for the order</h3>
+<p>First up a basket must be created. Baskets can have items added and removed, be modified, etc.</p>
+
+<p>In most cases the shop will be setup to automatically fulfil the order once the balance reaches zero.</p>
+
+<aside class="success">
+It should be as easy as that!
+</aside>
+<h1 id='baskets'>Baskets</h1><h2 id='create-a-basket'>Create a Basket</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/baskets"</span>
+  -X <span class="s2">"POST"</span>
+  -H <span class="s1">'Authorization: Bearer api_key'</span>
+  -d <span class="s1">$'{"data": {}}'</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"jsonapi"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-1234-1234-1234-123456789012"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basket"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"shop"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"shop"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"basket-items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint is used to create a basket</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.goods.co.uk/commerce/baskets</code></p>
+<h3 id='payload'>Payload</h3>
+<p>The payload should be in <a href="http://jsonapi.org">json-api</a> format.</p>
+<h1 id='basket-items'>Basket items</h1><h2 id='create-a-basket-item'>Create a Basket Item</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/basket-items"</span>
+    -X <span class="s2">"POST"</span>
+    -H <span class="s1">'Authorization: Bearer api_key'</span>
+    -d <span class="s1">$'{
+  "data": {
+    "attributes": {
+      "quantity": 1
+    },
+    "relationships": {
+      "basket": {
+        "data": {
+          "id": "12345678-1234-1234-1234-123456789012",
+          "type": "baskets"
+        }
+      },
+      "sku": {
+        "data": {
+          "id": "1",
+          "type": "skus"
+        }
+      }
+    }
+  }
+}'</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"jsonapi"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"99999999-9999-9999-9999-999999999999"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basket-item"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"sku"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sku"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"basket"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basket"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-1234-1234-1234-123456789012"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"is-hidden"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inserted-at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-01T00:00:00.000000Z"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint is used to create a basket item</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.goods.co.uk/commerce/basket-items</code></p>
+<h3 id='payload'>Payload</h3>
+<p>The payload should be in <a href="http://jsonapi.org">json-api</a> format.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>quantity</td>
+<td>yes</td>
+<td>The quantity of the SKU this basket item contains</td>
+</tr>
+</tbody></table>
+<h3 id='relationships'>Relationships</h3>
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>sku</td>
+<td>yes</td>
+<td>The SKU that the basket item represents</td>
+</tr>
+</tbody></table>
+<h1 id='orders'>Orders</h1><h2 id='create-an-order'>Create an Order</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/orders"</span>
+    -X <span class="s2">"POST"</span>
+    -H <span class="s1">'Authorization: Bearer api_key'</span>
+    -d <span class="s1">$'{
+  "data": {
+    "attributes": {
+      "phone-number": "0123456789",
+      "mobile-number": "",
+      "billing-address1": "1 Infinite Loop",
+      "billing-address2": "",
+      "billing-city": "London",
+      "billing-country": "GB",
+      "email-address": "john@smith.com",
+      "billing-region": "",
+      "name": "John Smith",
+      "billing-postcode": "W1 1AA"
+    },
+    "type": "orders",
+    "relationships": {
+      "basket": {
+        "data": {
+          "type": "baskets",
+          "id": "12345678-1234-1234-1234-123456789012"
+        }
+      }
+    }
+  }
+}
+</span></code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"jsonapi"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567890123"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reserved"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shipping-region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shipping-postcode"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shipping-country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shipping-city"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shipping-address2"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shipping-address1"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"phone-number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01234567890"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Smith"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"mobile-number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inserted-at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-01T00:00:00.000000Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email-address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"john@smith.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"billing-region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"billing-postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"W1 1AA"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"billing-country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GB"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"billing-city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"billing-address2"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"billing-address1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1 Infinite Loop"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"balance"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"amount-paid"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"shop"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"shop"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"order-payment-methods"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-payment-method"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"order-lines"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-line"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9876543210987"</span><span class="w"> </span><span class="p">}]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"customer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"customer"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"basket"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basket"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-1234-1234-1234-123456789012"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"included"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-payment-method"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"max-payable-amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"shop-payment-method"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"shop-payment-method"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"order"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567890123"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9876543210987"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-line"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"reserved"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"is-hidden"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"sku"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sku"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"order"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567890123"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint is used to create an order</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.goods.co.uk/commerce/orders</code></p>
+<h3 id='payload'>Payload</h3>
+<p>The payload should be in <a href="http://jsonapi.org">json-api</a> format.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>yes</td>
+<td>Customers full name</td>
+</tr>
+<tr>
+<td>email-address</td>
+<td>yes</td>
+<td>Customer&#39;s email address</td>
+</tr>
+<tr>
+<td>phone-number</td>
+<td>yes</td>
+<td>Customer&#39;s primary phone number</td>
+</tr>
+<tr>
+<td>mobile-number</td>
+<td>optional</td>
+<td>Customer&#39;s mobile phone number</td>
+</tr>
+<tr>
+<td>billing-address1</td>
+<td>yes</td>
+<td>Billing address first line</td>
+</tr>
+<tr>
+<td>billing-address2</td>
+<td>optional</td>
+<td>Billing address second line</td>
+</tr>
+<tr>
+<td>billing-city</td>
+<td>yes</td>
+<td>Billing address city</td>
+</tr>
+<tr>
+<td>billing-region</td>
+<td>optional</td>
+<td>Billing address region (e.g. county or state)</td>
+</tr>
+<tr>
+<td>billing-postcode</td>
+<td>yes</td>
+<td>The postcode or zipcode</td>
+</tr>
+<tr>
+<td>billing-country</td>
+<td>yes</td>
+<td>The two letter country code (e.g. GB)</td>
+</tr>
+<tr>
+<td>shipping-address1</td>
+<td>optional</td>
+<td>Shipping address first line</td>
+</tr>
+<tr>
+<td>shipping-address2</td>
+<td>optional</td>
+<td>Shipping address second line</td>
+</tr>
+<tr>
+<td>shipping-city</td>
+<td>optional</td>
+<td>Shipping address city</td>
+</tr>
+<tr>
+<td>shipping-region</td>
+<td>optional</td>
+<td>Shipping address region (e.g. county or state)</td>
+</tr>
+<tr>
+<td>shipping-postcode</td>
+<td>optional</td>
+<td>The postcode or zipcode</td>
+</tr>
+<tr>
+<td>shipping-country</td>
+<td>optional</td>
+<td>The two letter country code (e.g. GB)</td>
+</tr>
+</tbody></table>
+<h3 id='relationships'>Relationships</h3>
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>basket</td>
+<td>yes</td>
+<td>The basket that the order should be created from</td>
+</tr>
+</tbody></table>
+<h1 id='payments'>Payments</h1><h2 id='create-a-payment'>Create a Payment</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/payments"</span>
+    -X <span class="s2">"POST"</span>
+    -H <span class="s1">'Authorization: Bearer api_key'</span>
+
+    -d <span class="s1">$'{
+  "data": {
+    "attributes": {
+      "amount": "10000",
+      "capture": "true"
+    },
+    "relationships": {
+      "order": {
+        "data": {
+          "type": "orders",
+          "id": "1234567891234"
+        }
+      },
+      "shop-payment-method": {
+        "data": {
+          "type": "shop-payment-methods",
+          "id": "1"
+        }
+      }
+    }
+  }
+}'</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"jsonapi"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"included"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-payment-method"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"payment-method"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment-method"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"order"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1617281418911"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"33"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"max-payable-amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"shop"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"shop"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"payments"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"157dc890-1613-46b1-991d-d1db2cd61473"</span><span class="w"> </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"order-payment-methods"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-payment-method"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"order-lines"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order-line"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1617281419128"</span><span class="w"> </span><span class="p">}]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"customer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"customer"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"basket"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"basket"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"26c266ee-9936-431a-8d3f-f4b3bc8f978f"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1617281418911"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dispatched"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"shipping-region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"shipping-postcode"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"shipping-country"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"shipping-city"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"shipping-address2"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"shipping-address1"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"phone-number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01753622331"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"mobile-number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"inserted-at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-19T16:43:02.228667Z"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"email-address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kyle@wearelion.com"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billing-region"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billing-postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SL4 3BP"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billing-country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GB"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billing-city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Windsor"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billing-address2"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"billing-address1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21a"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"balance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"amount-paid"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"payment-method"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"payment-method"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"order"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order"</span><span class="p">,</span><span class="w"> </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1617281418911"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"157dc890-1613-46b1-991d-d1db2cd61473"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">"token"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s2">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="w"> </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint is used to create a payment</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.goods.co.uk/commerce/payments</code></p>
+<h3 id='payload'>Payload</h3>
+<p>The payload should be in <a href="http://jsonapi.org">json-api</a> format.</p>
+<h3 id='attributes'>Attributes</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>amount</td>
+<td>yes</td>
+<td>The amount to be paid</td>
+</tr>
+<tr>
+<td>capture</td>
+<td>yes</td>
+<td>Take payment immediately or just authorize</td>
+</tr>
+<tr>
+<td>card-number</td>
+<td>optional</td>
+<td>Full card number</td>
+</tr>
+<tr>
+<td>cardholder</td>
+<td>optional</td>
+<td>Card holders full name</td>
+</tr>
+<tr>
+<td>valid-from</td>
+<td>optional</td>
+<td>Card valid from date (e.g. 0117)</td>
+</tr>
+<tr>
+<td>expiry-date</td>
+<td>optional</td>
+<td>Card expiry date (e.g. 0120)</td>
+</tr>
+<tr>
+<td>issue-number</td>
+<td>optional</td>
+<td>Card issue number</td>
+</tr>
+<tr>
+<td>cvv</td>
+<td>optional</td>
+<td>CVV card security code</td>
+</tr>
+<tr>
+<td>token</td>
+<td>optional</td>
+<td>Token payment string</td>
+</tr>
+</tbody></table>
+<h3 id='relationships'>Relationships</h3>
+<table><thead>
+<tr>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>order</td>
+<td>yes</td>
+<td>The order linked to the payment</td>
+</tr>
+<tr>
+<td>shop-payment-method</td>
+<td>yes</td>
+<td>The shop payment method to use for the payment</td>
+</tr>
+</tbody></table>
+<h1 id='products'>Products</h1><h2 id='get-products'>Get Products</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/products"</span>
+  -H <span class="s2">"Authorization: api_key"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured as JSON-API like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all products.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET https://api.goods.co.uk/commerce/products</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>include_cats</td>
+<td>false</td>
+<td>If set to true, the result will also include cats.</td>
+</tr>
+<tr>
+<td>available</td>
+<td>true</td>
+<td>If set to false, the result will include kittens that have already been adopted.</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+<h2 id='get-a-specific-product'>Get a Specific Product</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific SKU.</p>
+
+<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the kitten to retrieve</td>
+</tr>
+</tbody></table>
+<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
+  -X DELETE
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"kittn"</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s2">"meowmeowmeow"</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint deletes a specific kitten.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the kitten to delete</td>
+</tr>
+</tbody></table>
+<h1 id='skus'>SKUs</h1><h2 id='get-skus'>Get SKUs</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.goods.co.uk/commerce/skus"</span>
+  -H <span class="s2">"Authorization: api_key"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured as JSON-API like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all skus.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET https://api.goods.co.uk/commerce/skus</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>include_cats</td>
+<td>false</td>
+<td>If set to true, the result will also include cats.</td>
+</tr>
+<tr>
+<td>available</td>
+<td>true</td>
+<td>If set to false, the result will include kittens that have already been adopted.</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+Remember — a happy kitten is an authenticated kitten!
+</aside>
+<h2 id='get-a-specific-sku'>Get a Specific SKU</h2><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific SKU.</p>
+
+<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the kitten to retrieve</td>
+</tr>
+</tbody></table>
+<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
+  -X DELETE
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"kittn"</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s2">"meowmeowmeow"</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"deleted"</span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint deletes a specific kitten.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the kitten to delete</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">shell</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
