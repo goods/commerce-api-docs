@@ -82,39 +82,7 @@ curl "https://api.goods.co.uk/commerce/orders"
         }
       }
     }
-<<<<<<< HEAD
-  },
-  "included": [
-    {
-      "id": "1",
-      "type": "order-payment-method",
-      "attributes": { "max-payable-amount": 10000 },
-      "relationships": {
-        "shop-payment-method": {
-          "data": { "type": "shop-payment-method", "id": "1" }
-        },
-        "order": { "data": { "type": "order", "id": "1234567890123" } }
-      }
-    },
-    {
-      "id": "9876543210987",
-      "type": "order-line",
-      "attributes": {
-        "status": "reserved",
-        "quantity": 1,
-        "price": 10000,
-        "metadata": null,
-        "is-hidden": false
-      },
-      "relationships": {
-        "sku": { "data": { "type": "sku", "id": "1" } },
-        "order": { "data": { "type": "order", "id": "1234567890123" } }
-      }
-    }
-  ]
-=======
   }
->>>>>>> d45222f... Finish updating docs
 }
 ```
 
@@ -154,8 +122,6 @@ The payload should be in [json-api](http://jsonapi.org) format.
 | Type   | Required | Description                                      |
 | ------ | -------- | ------------------------------------------------ |
 | basket | yes      | The basket that the order should be created from |
-<<<<<<< HEAD
-=======
 
 ### Includes
 
@@ -167,4 +133,3 @@ e.g. `include: "order_payment_methods,order_lines"`
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | order_lines           | The order lines related to this order.                                                                                                                                     |
 | order_payment_methods | The order payment methods available for this order. These will contain the `shop_payment_method` and the `max_payable_amount` that can be processed by that payment method |
->>>>>>> d45222f... Finish updating docs

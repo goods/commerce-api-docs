@@ -5,33 +5,12 @@
 ```shell
 curl "https://api.goods.co.uk/commerce/skus"
   -H "Authorization: api_key"
-<<<<<<< HEAD
-=======
   -d $'{}'
->>>>>>> d45222f... Finish updating docs
 ```
 
 > The above command returns JSON structured as JSON-API like this:
 
 ```json
-<<<<<<< HEAD
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-=======
 {
   "jsonapi": { "version": "1.0" },
   "data": [
@@ -62,7 +41,6 @@ curl "https://api.goods.co.uk/commerce/skus"
     }
   ]
 }
->>>>>>> d45222f... Finish updating docs
 ```
 
 This endpoint retrieves all skus.
@@ -73,16 +51,6 @@ This endpoint retrieves all skus.
 
 ### Query Parameters
 
-<<<<<<< HEAD
-| Parameter    | Default | Description                                                                      |
-| ------------ | ------- | -------------------------------------------------------------------------------- |
-| include_cats | false   | If set to true, the result will also include cats.                               |
-| available    | true    | If set to false, the result will include kittens that have already been adopted. |
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-=======
 | Parameter            | Type    | Description                       |
 | -------------------- | ------- | --------------------------------- |
 | filter[product_id]   | Integer | Filter by a specific product id   |
@@ -125,32 +93,19 @@ The list of operators that be used in SKU field filtering.
 | is_same_or_before | Date                    | Date is equal to or before value   |
 | is_after          | Date                    | Date is after value                |
 | is_same_or_after  | Date                    | Date is equal to or after value    |
->>>>>>> d45222f... Finish updating docs
 
 ## Get a Specific SKU
 
 ```shell
-<<<<<<< HEAD
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-=======
 curl "https://api.goods.co.uk/commerce/skus/1"
   -H "Authorization: api_key"
   -d $'{}'
->>>>>>> d45222f... Finish updating docs
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-<<<<<<< HEAD
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-=======
   "jsonapi": { "version": "1.0" },
   "id": "1",
   "attributes": { "stock-quantity": 9999, "price": 1999 },
@@ -176,75 +131,11 @@ curl "https://api.goods.co.uk/commerce/skus/1"
       }
     }
   ]
->>>>>>> d45222f... Finish updating docs
 }
 ```
 
 This endpoint retrieves a specific SKU.
 
-<<<<<<< HEAD
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-| Parameter | Description                      |
-| --------- | -------------------------------- |
-| ID        | The ID of the kitten to retrieve |
-
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require("kittn");
-
-let api = kittn.authorize("meowmeowmeow");
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted": ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-| Parameter | Description                    |
-| --------- | ------------------------------ |
-| ID        | The ID of the kitten to delete |
-=======
 ### HTTP Request
 
 `GET https://api.goods.co.uk/commerce/skus/<ID>`
@@ -254,4 +145,3 @@ This endpoint deletes a specific kitten.
 | Parameter | Description                   |
 | --------- | ----------------------------- |
 | ID        | The ID of the SKU to retrieve |
->>>>>>> d45222f... Finish updating docs
