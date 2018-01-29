@@ -82,6 +82,7 @@ curl "https://api.goods.co.uk/commerce/orders"
         }
       }
     }
+<<<<<<< HEAD
   },
   "included": [
     {
@@ -111,6 +112,9 @@ curl "https://api.goods.co.uk/commerce/orders"
       }
     }
   ]
+=======
+  }
+>>>>>>> d45222f... Finish updating docs
 }
 ```
 
@@ -150,3 +154,17 @@ The payload should be in [json-api](http://jsonapi.org) format.
 | Type   | Required | Description                                      |
 | ------ | -------- | ------------------------------------------------ |
 | basket | yes      | The basket that the order should be created from |
+<<<<<<< HEAD
+=======
+
+### Includes
+
+As per the JSON API spec related resources can be included in the response payload. These can be requested by adding a parameter to request with the key `include` and the value as a comma separated list of the desired resources.
+
+e.g. `include: "order_payment_methods,order_lines"`
+
+| Type                  | Description                                                                                                                                                                |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| order_lines           | The order lines related to this order.                                                                                                                                     |
+| order_payment_methods | The order payment methods available for this order. These will contain the `shop_payment_method` and the `max_payable_amount` that can be processed by that payment method |
+>>>>>>> d45222f... Finish updating docs

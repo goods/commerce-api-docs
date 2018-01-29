@@ -36,6 +36,7 @@ curl "https://api.goods.co.uk/commerce/payments"
 ```json
 {
   "jsonapi": { "version": "1.0" },
+<<<<<<< HEAD
   "included": [
     {
       "type": "order-payment-method",
@@ -103,6 +104,17 @@ curl "https://api.goods.co.uk/commerce/payments"
       "order": { "data": { "type": "order", "id": "1617281418911" } }
     },
     "id": "157dc890-1613-46b1-991d-d1db2cd61473",
+=======
+  "id": "abcdef12-abcd-abcd-abcd-abcdef123456",
+  "data": {
+    "type": "payment",
+    "relationships": {
+      "shop-payment-method": {
+        "data": { "type": "shop-payment-method", "id": "1" }
+      },
+      "order": { "data": { "type": "order", "id": "1234567891234" } }
+    },
+>>>>>>> d45222f... Finish updating docs
     "attributes": { "token": null, "amount": 10000 }
   }
 }
@@ -138,3 +150,17 @@ The payload should be in [json-api](http://jsonapi.org) format.
 | ------------------- | -------- | ---------------------------------------------- |
 | order               | yes      | The order linked to the payment                |
 | shop-payment-method | yes      | The shop payment method to use for the payment |
+<<<<<<< HEAD
+=======
+
+### Includes
+
+As per the JSON API spec related resources can be included in the response payload. These can be requested by adding a parameter to request with the key `include` and the value as a comma separated list of the desired resources.
+
+e.g. `include: "order,order.order_payment_methods"`
+
+| Type                        | Description                                                                                                                                                                       |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| order                       | The order linked to the payment.                                                                                                                                                  |
+| order.order_payment_methods | The updated order payment methods available for this order. Each order payment method will have had its `amount_payable` adjusted now that at least one payment has been created. |
+>>>>>>> d45222f... Finish updating docs
