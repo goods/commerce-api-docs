@@ -111,17 +111,15 @@ First up a basket must be created. Baskets can have items added and removed, be 
 
 ### Step 2: Create a basket item
 
-First up a basket must be created. Baskets can have items added and removed, be modified, etc.
+Next, basket items must be created (otherwise nothing is being bought!). Basket items will need SKU and quantity.
 
 ### Step 3: Create an order from the basket
 
-First up a basket must be created. Baskets can have items added and removed, be modified, etc.
+Once the basket is ready (all basket items created), an order can be created from the basket.
 
 ### Step 4: Create a payment for the order
 
-First up a basket must be created. Baskets can have items added and removed, be modified, etc.
-
-In most cases the shop will be setup to automatically fulfil the order once the balance reaches zero.
+Finally payments can be added to order. In most cases the shop will be setup to automatically fulfil the order once the order balance reaches zero.
 
 <aside class="success">
 It should be as easy as that!
