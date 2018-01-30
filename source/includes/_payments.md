@@ -85,9 +85,10 @@ The payload should be in [json-api](http://jsonapi.org) format.
 
 As per the JSON API spec related resources can be included in the response payload. These can be requested by adding a parameter to request with the key `include` and the value as a comma separated list of the desired resources.
 
-e.g. `include: "order,order.order_payment_methods"`
+e.g. `include: "order,order.order_lines"`
 
 | Type                        | Description                                                                                                                                                                       |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | order                       | The order linked to the payment.                                                                                                                                                  |
+| order.order_lines           | The order lines linked to the payment.                                                                                                                                            |
 | order.order_payment_methods | The updated order payment methods available for this order. Each order payment method will have had its `amount_payable` adjusted now that at least one payment has been created. |
